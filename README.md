@@ -54,10 +54,10 @@ func _upload_unityroom_score():
 	# スコアを登録
 	$Unityroom_RegisterScore.set_hiscore_value(float(Global.score))
 	# 連続投稿防止用タイマーの範疇外かをチェック
-	while ! get_node("/root/Main/Unityroom_RegisterScore").is_Ready_Upload():
+	while ! $Unityroom_RegisterScore.is_Ready_Upload():
 		await get_tree().create_timer(1.0).timeout
 	# スコア投稿開始
-	get_node("/root/Main/Unityroom_RegisterScore").set_send_hiscore()
+	$Unityroom_RegisterScore.set_send_hiscore()
 ````
 ----
  
