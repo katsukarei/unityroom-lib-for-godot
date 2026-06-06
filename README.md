@@ -69,14 +69,14 @@ func _upload_unityroom_score():
 ----
 ````
 # アップロード成功
-func _hiscore_sent_success(_error_code:Error):
+func sent_hiscore_success(_error_code:Error):
 	# エラーコードがERR_SKIPの場合、ハイスコアではなかった、とみなされアップロードされていません
 	# (Scoreboard Write Modeの項を参照)
 	if _error_code != Error.ERR_SKIP:
 		print("ハイスコアがアップロードされました")
 
 # アップロード失敗
-func _hiscore_sent_fail(_error_code:Error):
+func sent_hiscore_fail(_error_code:Error):
 	print("スコアアップロードに失敗しました")
 ````
 ----
