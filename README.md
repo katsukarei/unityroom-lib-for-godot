@@ -29,14 +29,13 @@
 1. Unityroom公式ページの、[スコアランキング機能の実装方法](https://help.unityroom.com/2e9dc3ed5de980d5a10ce7ebb145e069)を参考に、API有効化、スコアボードの用意を行います
 2. 発行された「HMAC認証用キー」を、テキストファイルとして保存します
 3. 以下のスクリーンショットのように、「res://Unityroom/hmac_unityroom.txt」というパスになるように上記テキストファイルを保存します(大文字小文字などのパス間違いに注意してください)  
-![Properties](SampleImage/Properties.png)
+![Directory_Structure](SampleImage/Directory_Structure.png)
 
 ----
 
 ### [各ノードの設定]
 1. 作成したノードには、3つのプロパティがあります。ゲームに合わせて適宜設定してください
-![Directory_Structure](SampleImage/Directory_Structure.png)
-
+![Properties](SampleImage/Properties.png)
   - [Board Number]
     - 2つあるスコアボードのどちらを使用するか。詳細は公式ドキュメントを参照してください。
   - [IN Debug]
