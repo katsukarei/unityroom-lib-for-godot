@@ -1,27 +1,38 @@
 # unityroom-lib-for-godot
-- GodotEngine(GDScript)用のUnityroomスコアランキングライブラリです
+- GodotEngine(GDScript)用の[Unityroom](https://unityroom.com/)スコアランキングライブラリです
 - ※非公式ライブラリです。Unityroomへの問い合わせなどは行わないでください※
 
-## 概要
+
+----
+
+## ■概要■
 - [Unityroom](https://unityroom.com/) のスコアランキング機能を、GodotEngineのWebエクスポートから手軽に扱うためのライブラリです
 - Unity用のライブラリ([unityroom-client-library](https://github.com/naichilab/unityroom-client-library)を参考に作成しています
   - (※ まったく同じ動作をするわけではありません)
 
-## 対応環境
+----
+
+## ■対応環境■
 - GodotEngine4.5以降(Unityroomの対応環境に準拠)
 
-## インストール方法
+----
+
+## ■インストール方法■
 1. ダウンロード、もしくはクローンしたファイル「unityroom_register_score.gd」を、自身のGodotプロジェクトに取り込みます
 2. 適当な場所に「Node」型のノードを作成し、上記のGDScriptをアタッチします
 3. 以上でインストールは完了です
 
-## 使い方
-### ゲーム固有のHMAC用意
-1. Unityroom公式ページの、[スコアランキング機能の実装方法(https://help.unityroom.com/2e9dc3ed5de980d5a10ce7ebb145e069)]を参考に、API有効化、スコアボードの用意を行います
+----
+
+## ■使い方■
+### [ゲーム固有のHMAC用意]
+1. Unityroom公式ページの、[スコアランキング機能の実装方法](https://help.unityroom.com/2e9dc3ed5de980d5a10ce7ebb145e069)を参考に、API有効化、スコアボードの用意を行います
 2. 発行された「HMAC認証用キー」を、テキストファイルとして保存します
 3. 以下のスクリーンショットのように、「res://Unityroom/hmac_unityroom.txt」というパスになるように上記テキストファイルを保存します(大文字小文字などのパス間違いに注意してください)
 
-### 各ノードの設定
+----
+
+### [各ノードの設定]
 1. 作成したノードには、3つのプロパティがあります。ゲームに合わせて適宜設定してください
   - Board Number : 2つあるスコアボードのどちらを使用するか。詳細は公式ドキュメントを参照してください。
   - IN Debug : オンにすると、ブラウザのDevコンソールにログが出るようになります
@@ -66,11 +77,11 @@ func _hiscore_sent_fail(_error_code:Error):
 - Unityroom以外のエクスポート先にHMACキーを含めないように注意してください
 
 
-## メソッドとプロパティ
-### プロパティ
+## ■メソッドとプロパティ■
+### [プロパティ]
 
 
-### メソッド
+### [メソッド]
 
 
 ## ライセンス
