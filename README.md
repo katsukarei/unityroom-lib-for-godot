@@ -62,6 +62,7 @@ func _upload_unityroom_score():
 ----
  
 3. Unityroom用ノードのシグナルを、スコアアップロードの結果を知りたいノードへ接続します
+![Signals](SampleImage/Signals.png)
 
 
 4. シグナル接続された関数に、成功時と失敗時のコードを記述します
@@ -88,7 +89,14 @@ func _hiscore_sent_fail(_error_code:Error):
 - 以上の方法などを用い、Unityroom以外のエクスポート先にHMACキーを含めないように注意してください
  
 
-## ■メソッドとプロパティ■
+## ■メソッドとプロパティ、シグナル■
+### [シグナル]
+- sent_hiscore_success(error_code:Error)
+  - アップロード成功時に発火します。ただし、エラーコードがError.ERR_SKIPの場合はハイスコア未達のため実際にはアップロードされていません
+
+- signal sent_hiscore_fail(error_code:Error)
+  - アップロード失敗時に発火します。エラーコードは[Godot公式のERROR](https://docs.godotengine.org/en/stable/classes/class_%40globalscope.html#enum-globalscope-error)を参照。
+
 ### [プロパティ]
 - [board_number:int]
   - スコアアップロード先のスコアボード番号指定。通常は1か2
