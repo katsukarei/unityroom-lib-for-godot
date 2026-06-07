@@ -1,5 +1,5 @@
 # unityroom-lib-for-godot
-- GodotEngine(GDScript)用の[Unityroom](https://unityroom.com/)スコアランキングライブラリです
+- GodotEngine(GDScript)用の[Unityroom](https://unityroom.com/)スコアランキングライブラリ(SDK)です
 - ※非公式/非公認ライブラリです。Unityroomへの問い合わせなどは行わないでください※
 
 
